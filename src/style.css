@@ -24,6 +24,7 @@ body {
   margin-bottom: 24px;
 }
 
+/* stylelint-disable indentation */
 .refresh {
   height: 35px;
   width: 70px;
