@@ -24,13 +24,13 @@ body {
   margin-bottom: 24px;
 }
 
-/* stylelint-disable indentation */
 .refresh {
   height: 35px;
   width: 70px;
   padding: 10px 10px;
   color: #fff;
   background-color: rgb(182, 182, 182);
+  /* stylelint-disable indentation */
   margin-right: 30px;
   margin-left: 10px;
   border: 1px rgb(182, 182, 182) solid;
