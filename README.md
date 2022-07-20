@@ -4,19 +4,17 @@ To Do List
 
 # 📜 Description the project.
 
-one page website that contains scores that gets from API, you can Add your name and score too and post it to the AP
+Is a website that contains a list of works that should done you can add new work and teck the done work esaily and delete them by one click. .
 
 ## 🏛 Built With
 
 - html/css/js.
-- node.js
 - following linters standards.
 - following github flows standards.
-- following git flows
 - webpak.
 
 ### 🖥️LIVE DEMO
-You can use leaderboard by clicking [here]()
+You can use Awesome Books by clicking [here](https://zakiyousufi.github.io/to-do-list/)
 
 ## 📑 Authors
 
@@ -43,17 +41,15 @@ to use the project Awsome Books please follow :
 
  >Syntax:
   >>> cd {folder name/ eg: desktop} 
-  >>> git clone {URL that you copied}
+  >>> git clone {repository URL}
 
 ### 🔌Usage
 
->open your directory leaderboard/
+>open your directory Awsome Books/
 to run the file :
 _use vs-code or any IDE  to view line code .
-_use CMD terminal or git bash to open the webpage 
-  steps
-  npm install 
-  npm start
+
+_use you preferd browser to run the file .html to get project website.
 
 ## 🤝 Contributing
 
