@@ -1,20 +1,20 @@
 # 🧧 Project Name
 
-To Do List
+Leaderboard
 
 # 📜 Description the project.
 
-Is a website that contains a list of works that should done you can add new work and teck the done work esaily and delete them by one click. .
-
+Is a website that contains a list of user and scores you can add new persone esaily. for this project I used API 
 ## 🏛 Built With
 
 - html/css/js.
 - following linters standards.
 - following github flows standards.
+- following git flows standards.
 - webpak.
 
 ### 🖥️LIVE DEMO
-You can use Awesome Books by clicking [here](https://zakiyousufi.github.io/to-do-list/)
+You can use Leaderboard by clicking [here]()
 
 ## 📑 Authors
 
@@ -29,9 +29,9 @@ You can use Awesome Books by clicking [here](https://zakiyousufi.github.io/to-do
 To get a local copy up and running... 
 Follow these 
   ## 📋Setup
-to use the project Awsome Books please follow :
+to use the project Leaderboard please follow :
  >Open GitHub and go to my GitHub Profile >>Repositorys
- Repository name: Awsome books.
+ Repository name: Leaderboard.
  ** To clone
  >Click “Code” and copy the given URL.
 
