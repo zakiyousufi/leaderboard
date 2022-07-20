@@ -24,8 +24,6 @@ You can use Leaderboard by clicking [here]()
 
 ## ⚙ Getting Started
 
-**This web page is books site with my List of books title and authors.**
-
 To get a local copy up and running... 
 Follow these 
   ## 📋Setup
