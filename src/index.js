@@ -40,3 +40,10 @@ const addData = async () => {
   });
 };
 
+const refreshData = async () => {
+  const allUsersPart = document.getElementById('scores');
+  allUsersPart.innerHTML = '';
+  await addData();
+};
+
+
