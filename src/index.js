@@ -1,7 +1,7 @@
 import './style.css';
 
 const recentScore = document.getElementsById('recent')
-const playID = 'CsVjrIhDWuIKDeZ1pqQ'
+const playId = 'CsVjrIhDWuIKDeZ1pqQ'
 const leaderboardForm = document.getElementsById('add-your-score')
 
 leaderboardForm.addEventListener('submit', async (e) => {
@@ -12,5 +12,11 @@ leaderboardForm.addEventListener('submit', async (e) => {
     person: person.value,
     score: parseInt(score.value, 10),
   };
-
-});
+  const response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${playId}/scores/`, {
+    method: 'POST',
+    body: JSON.stringify(leaderboardFormData),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+  });
