@@ -1,7 +1,7 @@
 import './style.css';
 
-const playId = 'CsVjrIhDWuIKDeZ1pqQ'
-const leaderboardForm = document.querySelector('.add-score')
+const playId = 'CsVjrIhDWuIKDeZ1pqQ';
+const leaderboardForm = document.querySelector('.add-score');
 
 leaderboardForm.addEventListener('submit', async (e) => {
   e.preventDefault();
