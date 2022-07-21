@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/zakiyousufi/leaderboard/issues"
   },
-  "homepage": "https://github.com/zakiyousufi/leaderboard#readme",
+  "homepage": "https://github.com/zakiyousufi/leaderboard/",
   "devDependencies": {
     "@babel/preset-env": "^7.17.12",
     "babel-eslint": "^10.1.0",
