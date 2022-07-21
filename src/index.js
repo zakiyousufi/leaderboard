@@ -19,4 +19,8 @@ leaderboardForm.addEventListener('submit', async (e) => {
       'Content-Type': 'application/json',
     },
   });
-  });
+  const result = await response.json();
+  person.value = '';
+  score.value = '';
+  return result;
+});
