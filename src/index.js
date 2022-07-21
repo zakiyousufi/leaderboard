@@ -46,4 +46,9 @@ const refreshData = async () => {
   await addData();
 };
 
+const refreshButton = document.getElementById('refresh');
+refreshButton.addEventListener('click', refreshData);
 
+window.addEventListener('DOMContentLoaded', async () => {
+  await addData();
+});
