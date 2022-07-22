@@ -1,7 +1,7 @@
 {
-  "name": "to-do-list",
+  "name": "leaderboard",
   "version": "1.0.0",
-  "description": "In this project I have worked on a project to do list.",
+  "description": "In this project I have worked on a project leaderboard using one API.",
   "private": true,
   "scripts": {
     "test": "jest --coverage",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ahzamir/To-do-list.git"
+    "url": "git+https://github.com/zakiyousufi/leaderboard.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ahzamir/To-do-list/issues"
+    "url": "https://github.com/zakiyousufi/leaderboard/issues"
   },
-  "homepage": "https://github.com/ahzamir/To-do-list#readme",
+  "homepage": "https://github.com/zakiyousufi/leaderboard/",
   "devDependencies": {
     "@babel/preset-env": "^7.17.12",
     "babel-eslint": "^10.1.0",

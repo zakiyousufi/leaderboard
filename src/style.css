@@ -44,8 +44,13 @@ h2 {
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+}
+
+.API {
+  padding: 10px 10px;
+  border: 1px solid rgb(182, 182, 182);
 }
 
 .recent-scores {
