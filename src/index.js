@@ -35,11 +35,11 @@ const getData = async () => {
     users.result.forEach((user) => {
       const userInfo = `<div>${user.user}: ${user.score}</div>`;
       alluserPart.insertAdjacentHTML('beforeend', userInfo);
-      return ;
     });
   } catch (error) {
     return (null);
   }
+  return (null);
 };
 
 const refreshButton = document.getElementById('refresh');
