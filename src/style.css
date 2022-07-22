@@ -11,16 +11,17 @@ html {
 }
 
 body {
-  padding: 2.4rem;
+  padding: 5%;
+  background: linear-gradient(47deg, rgba(1,23,103,1) 20%, rgba(0,9,249,1) 50%, rgba(28,247,156,1) 80%);
 }
 
 .main {
-  padding: 10% 25%;
+  padding: 10% 15%;
 }
 
 .heading {
   font-size: 40px;
-  color: rgb(182, 182, 182);
+  color: rgba(255, 255,255, 50%);
   margin-bottom: 24px;
 }
 
@@ -29,11 +30,21 @@ body {
   width: 70px;
   padding: 10px 10px;
   color: #fff;
-  background-color: rgb(182, 182, 182);
+  background-color: rgba(255, 255, 255, 10%);
   /* stylelint-disable indentation */
   margin-right: 30px;
   margin-left: 10px;
-  border: 1px rgb(182, 182, 182) solid;
+  border: 1px #fff solid;
+}
+
+.refresh:hover {
+  background-color: rgba(255, 255, 255, 20%);
+  width: 80px;
+  height: 40px;
+}
+
+.refresh:focus {
+  background-color: rgba(255, 0, 55, 10%);
 }
 
 h2 {
@@ -41,16 +52,20 @@ h2 {
   margin-right: 30px;
   margin-top: 3px;
   width: 100%;
+  color: #fff;
 }
 
 .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .API {
   padding: 10px 10px;
-  border: 1px solid rgb(182, 182, 182);
+  border: 1px solid rgb(255, 255, 255);
+  color: #fff;
+  width: 100%;
+  height: auto;
 }
 
 .recent-scores {
