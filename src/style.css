@@ -12,7 +12,7 @@ html {
 
 body {
   padding: 5%;
-  background: linear-gradient(135deg, rgba(73,255,225,1) 0%, rgba(0,26,255,1) 100%);
+  background: linear-gradient(135deg, rgba(73, 255, 225, 1) 0%, rgba(0, 26, 255, 1) 100%);
   height: 100%
 }
 
@@ -73,7 +73,8 @@ h2 {
 
 form {
   display: flex;
-  flex-direction: column;padding: 10px 20px;
+  flex-direction: column;
+  padding: 10px 20px;
 }
 
 input {
@@ -90,12 +91,12 @@ input:focus:hover {
   outline: none;
 }
 
-::placeholder { 
+::placeholder {
   color: rgba(255, 255, 255, 50%);
 }
 
 @media (max-width: 706px) {
-  body{
+  body {
     padding: 27.5% 10%;
   }
 
