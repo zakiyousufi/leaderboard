@@ -101,6 +101,6 @@ input:focus:hover {
   .container {
     display: flex;
     flex-direction: column;
-    padding: 3.8% 10%;
+    padding: 3.7% 10%;
   }
 }
