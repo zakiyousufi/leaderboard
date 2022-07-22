@@ -1,7 +1,8 @@
 import './style.css';
 
-const playId = 'CsVjrIhDWuIKDeZ1pqQ';
+const gameId = 'c2tiUii6qQdFdKdUcqsG';
 const leaderboardForm = document.querySelector('.add-score');
+
 
 leaderboardForm.addEventListener('submit', async (e) => {
   e.preventDefault();
@@ -11,7 +12,8 @@ leaderboardForm.addEventListener('submit', async (e) => {
     user: user.value,
     score: parseInt(score.value, 10),
   };
-  const response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${playId}/scores/`, {
+
+  const response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores/`, {
     method: 'POST',
     body: JSON.stringify(leaderboardFormData),
     headers: {
@@ -24,31 +26,25 @@ leaderboardForm.addEventListener('submit', async (e) => {
   return result;
 });
 
-const getInfo = async () => {
-  const response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${playId}/scores/`, {
-    method: 'GET',
-  });
-  const result = await response.json();
-  return result;
-};
-const addData = async () => {
-  const players = await getInfo();
-  const allPlayerPart = document.getElementById('recent');
-  players.result.forEach((user) => {
-    const playerInfo = `<div>${user.user}: ${user.score}</div>`;
-    allPlayerPart.insertAdjacentHTML('beforeend', playerInfo);
-  });
-};
-
-const refreshData = async () => {
-  const allUsersPart = document.getElementById('scores');
-  allUsersPart.innerHTML = 'playerInfo';
-  await addData();
+const getData = async () => {
+  const response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores/`);
+  try {
+    const users = await response.json()
+    users.result.sort((a, b) => a.score - b.score)
+    const alluserPart = document.getElementById('recent');
+    alluserPart.innerText = ''
+    users.result.forEach((user) => {
+      const userInfo = `<div>${user.user}: ${user.score}</div>`;
+      alluserPart.insertAdjacentHTML('beforeend', userInfo);
+    });
+  } catch (error) {
+    console.log(error)
+  }
 };
 
 const refreshButton = document.getElementById('refresh');
-refreshButton.addEventListener('click', refreshData);
+refreshButton.addEventListener('click', getData);
 
 window.addEventListener('DOMContentLoaded', async () => {
-  await addData();
+  await getData();
 });
