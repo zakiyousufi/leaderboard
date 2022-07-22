@@ -13,7 +13,7 @@ html {
 body {
   padding: 5%;
   background: linear-gradient(135deg, rgba(73, 255, 225, 1) 0%, rgba(0, 26, 255, 1) 100%);
-  height: 100%
+  height: 100%;
 }
 
 .heading {
@@ -45,8 +45,6 @@ h2 {
   padding: 10px 10px;
   color: #fff;
   background-color: rgba(255, 255, 255, 10%);
-  margin-right: 30px;
-  margin-left: 10px;
   border: 1px #fff solid;
   margin: 10px 10px;
 }
