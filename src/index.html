@@ -10,24 +10,26 @@
 </head>
 
 
-  <body>
-    <h1 class="heading">Leaderboard</h1>
-    <main class="main container">
-        <section class="recent-scores">
-          <h2 class="recent-scores-heading">Recent scores </h2>
-          <button class="refresh" id="refresh">Refresh</button>
-          <div id="recent" class="API">
-          </div>
-        </section>
-
-      <form class="add-score" id="add-your-score">
-        <h2 class="add-score-heading">Add your score</h2>
-        <input id="input-name" class="input-name input" type="text" placeholder="Your name">
-        <input id="input-score" class="input-score input" type="text" placeholder="Your score">
-        <button class="refresh" type="submit" id="submit">Submit</button>
-      </form>
+<body>
+  <h1 class="heading">Leaderboard</h1>
+  <div class="container">
+    <section class="sec-recent">
+      <div class="recent-header">
+        <h2 class="recent-scores-heading">Recent scores </h2>
+        <button class="refresh" id="refresh">Refresh</button>
       </div>
-      <script src="https://kit.fontawesome.com/d5ee6b3935.js" crossorigin="anonymous"></script>
-  </body>
+      <div id="recent" class="API">
+      </div>
+    </section>
+
+    <form class="add-score" id="add-your-score">
+      <h2 class="add-score-heading">Add your score</h2>
+      <input id="input-name" class="input-name input" type="text" placeholder="Your name">
+      <input id="input-score" class="input-score input" type="text" placeholder="Your score">
+      <button class="refresh" type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+  <script src="https://kit.fontawesome.com/d5ee6b3935.js" crossorigin="anonymous"></script>
+</body>
 
 </html>
