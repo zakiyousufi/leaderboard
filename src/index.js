@@ -35,7 +35,7 @@ const getData = async () => {
     users.result.forEach((user) => {
       const userInfo = `<div>${user.user}: ${user.score}</div>`;
       alluserPart.insertAdjacentHTML('beforeend', userInfo);
-      return (100);
+      return ;
     });
   } catch (error) {
     return (null);
