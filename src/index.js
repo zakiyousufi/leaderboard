@@ -37,7 +37,8 @@ const getData = async () => {
       alluserPart.insertAdjacentHTML('beforeend', userInfo);
     });
   } catch (error) {
-  };
+    return (error)
+  }
 };
 
 const refreshButton = document.getElementById('refresh');
